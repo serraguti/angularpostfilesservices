@@ -17,8 +17,8 @@ export class ServicePostFiles {
         //DEBEMOS INDICAR EN LA PETICION QUE TIPO DE FORMATO TIENE EL OBJETO A ENVIAR
         let header = new HttpHeaders();
         header = header.set("Content-type", "application/json");
-        let request = "api/testingfiles";
-        let url = "https://apipostfiles.azurewebsites.net/" + request;
+        let request = "api/files/uploadimagencharla/10";
+        let url = "https://localhost:7273/" + request;
         return this._http.post(url, json, {headers: header});
     }
 }
